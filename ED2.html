@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Árbol Binario</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow: auto;
+        }
+        .tree-container {
+            display: flex;
+            gap: 20px;
+        }
+        .tree {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>ESTRUCTURAS DE DATOS 2</h1>
+    
+    <form id="form">
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" required>
+        <button type="submit">Insertar</button>
+    </form>
+
+    <button id="mostrarArbol">Mostrar Árboles</button>
+    <h1>Visualización de Árboles</h1>
+
+    <div class="tree-container">
+        <div class="tree">
+            <h4>Árbol Binario</h4>
+            <div id="IN"></div>
+            <div id="PRE"></div>
+            <div id="POST"></div>
+            <div id="arbolB"></div>
+        </div>
+
+        <div class="tree">
+            <h4>Árbol BB</h4>
+            <div id="INO"></div>
+            <div id="PREO"></div>
+            <div id="POSTO"></div>
+            <div id="arbolBB"></div>
+        </div>
+
+        <div class="tree">
+            <h4>Árbol AVL</h4>
+            <div id="INOR"></div>
+            <div id="PREOR"></div>
+            <div id="POSTOR"></div>
+            <div id="arbolAVL"></div>
+        </div>
+    </div>
+
+    <form id="form2">
+        <label for="valor">Cantidad:</label>
+        <input type="number" id="cantidad" required>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor2" required>
+        <button type="submit2">Insertar</button>
+    </form>
+    <button id="mostrarArbol2">Mostrar Árbol</button>
+    
+    <h4>ARBOL MVIAS</h4>
+    <div id="INORD"></div>
+    <div id="PREORD"></div>
+    <div id="POSTORD"></div>
+    <div id="arbolMV"> </div>
+
+
+    <h1>Grafos</h1>
+    <div id="form2" class="form-container">
+      <label for="vertice1">Vertice 1:</label>
+      <input type="text" id="vertice1" placeholder="Ej: A" required>
+      <label for="vertice2">Vertice 2:</label>
+      <input type="text" id="vertice2" placeholder="Ej: B" required>
+      <label for="peso">Peso:</label>
+      <input type="number" id="peso" placeholder="Ej: 5">
+      <button id="agregar-arista">Agregar Arista</button>
+    </div>
+    
+    <div  class="form-container">
+      <label for="inicio-bfs">Inicio BFS:</label>
+      <input type="text" id="inicio-bfs" placeholder="Ej: A">
+      <button id="bfs">Ejecutar BFS</button>
+      <br>
+      <label for="inicio-dfs">Inicio DFS:</label>
+      <input type="text" id="inicio-dfs" placeholder="Ej: A">
+      <button id="dfs">Ejecutar DFS</button>
+    </div>
+  
+    <div class="tree-container">
+        <div class="tree">
+      <h2>Grafo Dirigido Ponderado:</h2>
+      <pre id="GDP"></pre>
+      <div id="bfs-dfs-GDP"></div>
+    </div>
+      <div class="tree">
+      <h2>Grafo No Dirigido Ponderado:</h2>
+      <pre id="GNDP"></pre>
+      <div id="bfs-dfs-GNDP"></div>
+    </div>
+      <div class="tree">
+      <h2>Grafo Dirigido:</h2>
+      <pre id="GD"></pre>
+      <div id="bfs-dfs-GD"></div>
+    </div>
+      <div class="tree">
+      <h2>Grafo No Dirigido:</h2>
+      <pre id="GND"></pre>
+      <div id="bfs-dfs-GND"></div>
+    </div>
+    </div>
+    
+    <script src="NodoBinario.js"></script>
+    <script src="ArbolBinario.js"></script>
+    <script src="ArbolBinarioBusqueda.js"></script>
+    <script src="NodoAVL.js"></script>
+    <script src="ArbolAVL.js"></script>
+    <script src="NodoMVias.js"></script>
+    <script src="ArbolMVias.js"></script>
+    <SCRIPT src="Grafo.js"></SCRIPT>
+    <SCRIPT src="GrafoNo.js"></SCRIPT>
+    <SCRIPT src="GrafoPeso.js"></SCRIPT>
+    <SCRIPT src="GrafoNoPeso.js"></SCRIPT>
+
+    <script src="interfaz.js"></script>
+</body>
+</html>
